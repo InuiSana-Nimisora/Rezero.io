@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #f3f7fa;
+    height: 70px;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity:0.9;
+    -khtml-opacity: 0.9;  
+}
+.head_logo_div,.head_nav_div{
+    width: 50%;
+    float: left;
+}
+
+.head_logo_div{
+    line-height: 70px;
+    text-align: center;
+}
+
+.head_nav_div{
+    line-height: 70px;
+}
+
+.head_nav{
+    margin: 0 auto;
+}
+
+.head_nav ul li{
+    float: left;
+    margin-right: 55px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.head_nav ul li a{
+    font-size: 16px;
+    color: #333333;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transform: all 0.2s;
+}
+
+.head_nav ul li a:hover{
+    color:#4b91c9;
+}
+.head_div{
+    width: 80%;
+    margin:0 auto;
+    height: 50%;
+}
+
+
+.logo_img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    margin-bottom: 15px;
+}
+.nav_li_on{
+    color: red;
+}
+a{
+	list-style: none;
+}
+li{
+	list-style: none;
+}
+.lunbo{
+	width: 100%;
+}
+.content{
+	width: 800px;
+	height: 300px;
+	margin: 20px auto;
+	position: relative;
+}
+#item{
+	width: 100%;
+	height: 100%;
+	
+}
+.item{
+	position: absolute;
+	opacity: 0;
+	transition: all 1s;
+	top: 75px;
+}
+body {
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+}
+.item.active{
+	opacity:1;
+}
+img{
+	width: 100%;
+}
+#btn-left{
+	width: 30px;
+	height: 69px;
+	font-size: 30px;
+	color: white;
+	background-color:rgba(0,0,0,0.4);
+	line-height: 69px;
+	padding-left:5px;
+	z-index: 10;/*始终显示在图片的上层*/
+	position: absolute;
+	left: 0;
+	top: 275px;
+	transform: translateY(-60%);/*使按钮向上偏移居中对齐*/
+	cursor: pointer;
+	opacity: 0;/*平时隐藏*/
+}
+.lunbo:hover #btn-left{
+	/*鼠标滑入，显示图标*/
+	opacity: 1;
+}
+
+#btn-right{
+	width: 26px;
+	height: 69px;
+	font-size: 30px;
+	color: white;
+	background-color:rgba(0,0,0,0.4);
+	line-height: 69px;
+	padding-left: 5px;
+	z-index: 10;
+	position: absolute;
+	right: 0;
+	top: 275px;
+	cursor: pointer;
+	opacity: 0;
+	transform: translateY(-60%);
+}
+.lunbo:hover #btn-right{
+	opacity: 1;
+}
+#circle{
+	height: 20px;
+	display: flex;
+	position: absolute;
+	bottom: 200px;
+	right: 25px;
+}
+.circle{
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border: 2px solid white;
+	background: rgba(0,0,0,0.4);
+	cursor: pointer;
+	margin: 5px;
+}
+.white{
+	background-color: #FFFFFF;
+}
