@@ -21,6 +21,7 @@ window.onload=function(){
         items[index].className="item active";
         circles[index].className="circle white";
     }
+    move();
     //点击右边按钮切换下一张图片
     rightBtn.onclick=function(){
         if(index<items.length-1){
@@ -33,7 +34,7 @@ window.onload=function(){
     }
     //点击左边按钮切换上一张图片
     leftBtn.onclick=function(){
-        if(index<items.length){
+        if(index>0){
             index--;
         }
         else{
